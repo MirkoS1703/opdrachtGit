@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tijdstip</title>
+</head>
+
+<body>
+    <script>
+        const timestamp = new Date();
+        const hour = timestamp.getHours();
+        document.write(`<p>Het is nu ${hour} uur.</p>`);
+        if (hour >= 0 && hour <= 7) {
+            document.write(`<p>Goeienacht!</p>`);
+        } else if (hour > 7 && hour <= 11) {
+            document.write(`<p>Goeiemorgen!</p>`);
+        } else if (hour > 11 && hour <= 18) {
+            document.write(`<p>Goeiemiddag!</p>`);
+        } else {
+            document.write(`<p>Goeie avond!</p>`);
+        }
+    </script>
+</body>
+
+</html>
